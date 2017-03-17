@@ -12,9 +12,9 @@ bool YangMatrixFind(int *arr,size_t row,size_t col,int key){
 	int y = col-1;
 	while(x<row && y>=0){
 		if(arr[x*col+y]<key){
-			++x;	//当前位置小于key值,剔除一列
+			++x;	//当前位置小于key值,剔除一行
 		}else if(arr[x*col+y]>key){
-			--y;	//当前位置大于key值,剔除一行
+			--y;	//当前位置大于key值,剔除一列
 		}else{
 			return true;	//找到返回真
 		}
