@@ -5,7 +5,7 @@
 *集成开发环境:Microsoft Visual Studio 2010 
 */
 #include<cassert>
-char* ReplaceBlack(char *str){
+char* ReplaceBlank(char *str){
 	assert(str);
 	int count = 0;
 	char *frontptr = str;
@@ -42,12 +42,12 @@ void TestReplaceBlank(){
 	char str5[30] = "Hello";			//没有空格
 	char *str6 = NULL;					//空指针
 
-	std::cout<<ReplaceBlack(str1)<<std::endl;
-	std::cout<<ReplaceBlack(str2)<<std::endl;
-	std::cout<<ReplaceBlack(str3)<<std::endl;
-	std::cout<<ReplaceBlack(str4)<<std::endl;
-	std::cout<<ReplaceBlack(str5)<<std::endl;
-	std::cout<<ReplaceBlack(str6)<<std::endl;	//引发断言错误
+	std::cout<<ReplaceBlank(str1)<<std::endl;
+	std::cout<<ReplaceBlank(str2)<<std::endl;
+	std::cout<<ReplaceBlank(str3)<<std::endl;
+	std::cout<<ReplaceBlank(str4)<<std::endl;
+	std::cout<<ReplaceBlank(str5)<<std::endl;
+	std::cout<<ReplaceBlank(str6)<<std::endl;	//引发断言错误
 
 
 }
